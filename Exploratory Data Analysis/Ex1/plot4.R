@@ -5,7 +5,6 @@ plot4 <- function(data=NULL) {
     data <- load_dataset()
   #initialize the graphic device device, passing width and height as parameters
   png("plot4.png", width=400, height=400)
-  
   par(mfrow=c(2,2))
   #1
   plot(data$Time, data$Global_active_power,type="l",xlab="",ylab="Global Active Power")
